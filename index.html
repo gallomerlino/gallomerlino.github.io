@@ -5,14 +5,32 @@
 <meta name='viewport' content='width=device-width,initial-scale=1'>
 
 <title>Gallo Merlino</title>
-
-<style>
-</style>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 
 </head>
 <body>
-  <a href="2906.usdz" rel="ar">
+  <!--a href="2906.usdz" rel="ar">
     <img src="2906.jpg" style="max-width: 80%" />
-  </a>
+  </a-->
+  <div class="demo">
+    <model-viewer
+      data-name="Gallo Merlino"
+      src="2906.glb"
+      ar
+      ar-modes="scene-viewer quick-look"
+      camera-controls
+      auto-rotate
+      poster="2906.jpg"
+    ></model-viewer>
+  </div>
+  <style>
+    .demo {
+      height: 80vh;
+    }
+    .demo model-viewer {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </body>
 </html>
